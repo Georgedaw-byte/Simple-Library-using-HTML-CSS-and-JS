@@ -81,21 +81,22 @@ function DisplayBooks(array)
             read.className = 'read'
         }
         read.addEventListener("click", () => {
+            let the_book = myLibrary.find((book) => book.id === div.getAttribute("data-index-number"))
             console.log("You clicked index:", i);
             read.classList.add("pressed")
             setTimeout(() => {
             read.classList.remove('pressed');
             }, 150);
-            array[i].isRead = !array[i].isRead
-            if (array[i].isRead)
+            the_book.isRead = !the_book.isRead
+            if (the_book.isRead)
             {
-                array[i].read = "read"
+                the_book.read = "read"
                 read.textContent = "read"
                 read.className = 'read'
             }
             else 
             {
-                array[i].read = "not read"
+                the_book.read = "not read"
                 read.textContent = "not read"
                 read.className = 'notread'
             }
