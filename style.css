@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+}
+
+span {
+    display: block;
+}
+
+.title {
+    text-align: center;
+    background-color: rgb(221, 153, 16);
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.author,
+.pages {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    color: grey;
+}
+
+.author {
+    position: absolute;
+    bottom: 10px;
+}
+
+.pages {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+img {
+    position: absolute;
+    margin-top: 10px;
+    right: 60px;
+    width: 90px;
+}
+.read {
+    all: unset;
+    position: absolute;
+    left: 0;
+    margin-top: 5px;
+    width: fit-content;
+    text-align: center;
+    background-color: rgb(16, 115, 221);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 0 15px 15px 0;
+    box-shadow: -2px 2px 0 2px black;
+}
+
+.notread {
+    all: unset;
+    position: absolute;
+    left: 0;
+    margin-top: 5px;
+    width: fit-content;
+    text-align: center;
+    background-color: rgb(221, 16, 16);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 0 15px 15px 0;
+    box-shadow: -2px 2px 0 2px black;
+}
+
+.pressed {
+        box-shadow: 0px 0px 0 0px black;
+}
+
+dialog {
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+dialog button {
+    margin-top: 10px;
+}
+
+input {
+    padding: 5px;
+}
+
+dialog + button {
+    all: unset;
+    display: block;
+    width: 200px;
+    position: absolute;
+    padding: 5px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50px;
+    background-color: rgb(4, 88, 232);
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;    
+}
+
+label:first-of-type {
+    margin-right: 15px;
+}
+
+.delete {
+    position: absolute;
+    right: 80px;
+    bottom: 5px;
+    padding: 2px;
+}
